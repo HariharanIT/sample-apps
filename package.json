@@ -7,6 +7,8 @@
   "name": "agora-app-builder",
   "scripts": {
     "start": "agora-app-builder-cli",
+    "clone-customization": "git clone https://github.com/AgoraIO-Community/App-Builder-Customization-API-Examples.git -b customer-api-requirement ./videomeeting/customization",
+    "ci": "npm install && agora-app-builder-cli install  && npm clone-customization && agora-app-builder-cli build web --prod &&  cp -r Builds/web videomeeting/dist && cp videomeeting/vercel.json videomeeting/dist",
     "start:info": "agora-app-builder-cli --info"
   },
   "version": "1.0.0"
