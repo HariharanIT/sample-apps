@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "agora-app-builder-cli": "3.0.0-beta.99"
+    "agora-app-builder-cli": "3.0.11"
   },
   "keywords": [],
   "license": "MIT",
@@ -9,7 +9,7 @@
     "start": "agora-app-builder-cli",
     "clone-customization": "git clone https://github.com/AgoraIO-Community/App-Builder-Customization-API-Examples.git -b customer-api-requirement api-examples",
     "create-dir": "mkdir videomeeting/customization",
-    "ci": "npm install && agora-app-builder-cli install && npm run clone-customization && npm run create-dir && cp api-examples/customer/* videomeeting/customization && agora-app-builder-cli build web --prod &&  cp -r Builds/web videomeeting/dist && cp videomeeting/vercel.json videomeeting/dist",
+    "ci": "npm install && agora-app-builder-cli install && npm run clone-customization && npm run create-dir && cp api-examples/i18n/* videomeeting/customization && agora-app-builder-cli build web --prod &&  cp -r Builds/web videomeeting/dist && cp videomeeting/vercel.json videomeeting/dist",
     "start:info": "agora-app-builder-cli --info"
   },
   "version": "1.0.0"
